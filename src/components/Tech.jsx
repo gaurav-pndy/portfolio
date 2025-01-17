@@ -1,19 +1,32 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn, textVariant } from "../utils/motion";
 
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
+import { styles } from "../styles";
 
 const Tech = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-center gap-10">
-      {technologies.map((technology) => (
-        <div className="w-28 h-28" key={technology.name}>
+    <div
+      className={`${styles.paddingX} max-w-7xl mx-auto mb-7 flex flex-row flex-wrap justify-center gap-10`}
+    >
+      {technologies.map((technology, index) => (
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.25, delay: index * 0.1 }}
+          className="w-24 h-24 text-center"
+          key={technology.name}
+        >
           <BallCanvas icon={technology.icon} />
-        </div>
+          <span className="text-sm">{technology.name}</span>
+        </motion.div>
       ))}
     </div>
   );
 };
 
-export default SectionWrapper(Tech, "");
+export default Tech;
