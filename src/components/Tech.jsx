@@ -1,9 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../utils/motion";
 
 import { BallCanvas } from "./canvas";
-import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 import { styles } from "../styles";
 
@@ -18,7 +16,7 @@ const Tech = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.25, delay: index * 0.1 }}
-          className="h-12 w-12 md:w-24 md:h-24 text-center "
+          className="h-14 w-14 md:w-24 md:h-24 text-center "
           key={technology.name}
         >
           <BallCanvas icon={technology.icon} />
