@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import indiaflag from "./indiaflag.svg";
-
+import wave from "./wave.gif";
+import staticWave from "./static-wave.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -25,11 +26,12 @@ import tailwind from "./tech/tailwind.webp";
 import typescript from "./tech/typescript.png";
 import react from "./react.webp";
 import vscode from "./vscode.webp";
-// import git from "./git.png";
-
+import manWithLaptop from "./man-with-laptop2.webp";
 export {
   logo,
   indiaflag,
+  wave,
+  staticWave,
   github,
   menu,
   close,
@@ -54,6 +56,5 @@ export {
   gsap,
   react,
   vscode,
-
-  // git,
+  manWithLaptop,
 };

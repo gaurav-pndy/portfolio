@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { FileInput, MapPin } from "lucide-react";
-import { indiaflag } from "../assets";
+import { wave, staticWave, manWithLaptop, indiaflag } from "../assets";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { RiMailFill } from "react-icons/ri";
 import FloatingLogos from "./FloatingLogos";
@@ -35,11 +35,7 @@ const Hero = () => {
             <span className="flex items-center gap-2">
               Hi{" "}
               <img
-                src={
-                  isHovered
-                    ? "src/assets/wave.gif"
-                    : "src/assets/static-wave.png"
-                }
+                src={isHovered ? wave : staticWave}
                 alt="wave"
                 className="inline w-20 md:w-32 "
                 onMouseEnter={() => setIsHovered(true)}
@@ -85,7 +81,7 @@ const Hero = () => {
 
       <div className="absolute  bottom-0 xs:bottom-10 md:bottom-0 md:-right-20  lg:top-10 lg:right-10 md:h-[70%]  lg:h-full flex p-10">
         <motion.img
-          src="src/assets/man-with-laptop2.webp"
+          src={manWithLaptop}
           alt=""
           className=" w-96 h-96 md:h-full md:w-full object-cover"
           initial={{ opacity: 0, x: 200 }}
