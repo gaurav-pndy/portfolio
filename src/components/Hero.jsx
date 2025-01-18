@@ -18,7 +18,7 @@ const Hero = () => {
       transition={{ duration: 1, ease: "easeOut" }}
     >
       <div
-        className={`${styles.paddingX} absolute inset-0 top-20 xs:top-24 md:top-[130px] lg:top-[120px] max-w-7xl mx-auto flex flow-row items-start gap-5`}
+        className={`${styles.paddingX} absolute inset-0 z-10 top-16 xs:top-24 md:top-[130px] lg:top-[120px] max-w-7xl mx-auto flex flow-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-12">
           <div className="w-5 h-5 rounded-full bg-[#915eff]"></div>
@@ -92,7 +92,7 @@ const Hero = () => {
 
       <FloatingLogos />
 
-      <div className="absolute bottom-5 z-20 w-full flex justify-center items-center">
+      <div className="absolute bottom-12 z-20 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
