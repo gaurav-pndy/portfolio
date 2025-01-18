@@ -13,11 +13,22 @@
   color-scheme: dark;
 }
 
+
+
+
 .hash-span {
   margin-top: -140px;
   padding-bottom: 100px;
   display: block;
 
+}
+
+@media (max-width: 768px) {
+  .hash-span {
+    margin-top: -100px;
+   
+  }
+  
 }
 
 .black-gradient {

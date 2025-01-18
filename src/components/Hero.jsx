@@ -12,17 +12,17 @@ const Hero = () => {
 
   return (
     <motion.section
-      className="relative w-full h-screen mx-auto overflow-hidden"
+      className="relative w-full h-screen mx-auto overflow-hidden "
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1, ease: "easeOut" }}
     >
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flow-row items-start gap-5`}
+        className={`${styles.paddingX} absolute inset-0 top-20 xs:top-24 md:top-[130px] lg:top-[120px] max-w-7xl mx-auto flex flow-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-12">
           <div className="w-5 h-5 rounded-full bg-[#915eff]"></div>
-          <div className="w-1 sm:h-96 h-40 violet-gradient"></div>
+          <div className="w-1 sm:h-96 h-64  violet-gradient"></div>
         </div>
 
         <motion.div
@@ -41,7 +41,7 @@ const Hero = () => {
                     : "src/assets/static-wave.png"
                 }
                 alt="wave"
-                className="inline w-32 "
+                className="inline w-20 md:w-32 "
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
               />
@@ -53,41 +53,41 @@ const Hero = () => {
             Frontend Developer
           </span>
 
-          <span className="flex items-center text-cyan-400 mt-2">
+          <span className="flex text-sm md:text-base items-center text-cyan-400 mt-2">
             <MapPin size="20" /> &nbsp;Uttarakhand, India &nbsp;
-            <img src={indiaflag} alt="" className="h-4" />
+            <img src={indiaflag} alt="" className="h-3 md:h-4" />
           </span>
 
-          <span className="flex items-center gap-10 z-10 mt-10">
+          <span className="flex items-center md:gap-10 gap-5 z-10 mt-5 md:mt-10 text-2xl md:text-4xl">
             <a href="mailto:gauravpandey2310@gmail.com" target="_blank">
-              <RiMailFill className="hover:text-cyan-400" size={32} />
+              <RiMailFill className="hover:text-cyan-400 " />
             </a>
             <a
               href="https://www.linkedin.com/in/gauravpandey04/"
               target="_blank"
             >
-              <FaLinkedinIn className="hover:text-cyan-400" size={32} />
+              <FaLinkedinIn className="hover:text-cyan-400" />
             </a>
             <a href="https://github.com/gaurav-pndy" target="_blank">
-              <FaGithub size={32} className="hover:text-cyan-400" />
+              <FaGithub className="hover:text-cyan-400" />
             </a>
             <a
               href="https://drive.google.com/file/d/1wOFPYHY5lH7Jkew-ImnN9rkdnLan2HUW/view?usp=drive_link"
               target="_blank "
             >
-              <button className="border border-white py-2 cursor-pointer rounded-xl flex gap-1 px-4 hover:bg-cyan-950 transition-all duration-300">
-                <FileInput size="20" /> Resume
+              <button className="border border-white py-2 cursor-pointer rounded-xl flex gap-1 items-center px-4 hover:bg-cyan-950 transition-all duration-300 text-xs  md:text-lg">
+                <FileInput size="18" /> Resume
               </button>
             </a>
           </span>
         </motion.div>
       </div>
 
-      <div className="absolute top-10 right-0 w-1/2 h-full flex p-10">
+      <div className="absolute  bottom-0 xs:bottom-10 md:bottom-0 md:-right-20  lg:top-10 lg:right-10 md:h-[70%]  lg:h-full flex p-10">
         <motion.img
-          src="src/assets/man-with-laptop2.png"
+          src="src/assets/man-with-laptop2.webp"
           alt=""
-          className=""
+          className=" w-96 h-96 md:h-full md:w-full object-cover"
           initial={{ opacity: 0, x: 200 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
@@ -96,7 +96,7 @@ const Hero = () => {
 
       <FloatingLogos />
 
-      <div className="absolute xs:bottom-5 bottom-32 z-20 w-full flex justify-center items-center">
+      <div className="absolute bottom-5 z-20 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div

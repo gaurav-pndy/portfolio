@@ -35,25 +35,6 @@ export const navLinks = [
   },
 ];
 
-// const services = [
-//   {
-//     title: "Web Developer",
-//     icon: web,
-//   },
-//   {
-//     title: "React Native Developer",
-//     icon: mobile,
-//   },
-//   {
-//     title: "Backend Developer",
-//     icon: backend,
-//   },
-//   {
-//     title: "Content Creator",
-//     icon: creator,
-//   },
-// ];
-
 const technologies = [
   {
     name: "React JS",
@@ -142,7 +123,8 @@ const projects = [
       },
     ],
     image: workly,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/gaurav-pndy/workly",
+    live_link: "https://workly-chi.vercel.app/",
   },
   {
     name: "Pathfinder - Trip Planner",
@@ -171,7 +153,8 @@ const projects = [
       },
     ],
     image: pathfinder,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/gaurav-pndy/pathfinder",
+    live_link: "https://pathfinder-eight.vercel.app/",
   },
   {
     name: "Employee Management System",
@@ -188,7 +171,8 @@ const projects = [
       },
     ],
     image: ems,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/gaurav-pndy/emp-manage-system",
+    live_link: "https://emp-manage-system-nu.vercel.app/",
   },
 ];
 

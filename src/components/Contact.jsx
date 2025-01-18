@@ -7,6 +7,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { FaRegPaperPlane } from "react-icons/fa";
+import { Mail, Phone } from "lucide-react";
 
 const Contact = () => {
   const formRef = useRef();
@@ -66,15 +67,26 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className={` flex xl:flex-row flex-col-reverse gap-0 overflow-hidden `}
-    >
+    <div className={` flex xl:flex-row flex-col-reverse overflow-hidden `}>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] xl:w-1/2 bg-black-100 p-7 rounded-2xl"
+        className="flex-[0.75] xl:w-1/2 bg-black-100 p-6 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+
+        <div className=" mt-2 flex flex-col md:flex-row gap-2 justify-between text-sm text-sky-400 ">
+          <a href="mailto:gauravpandey2310@gmail.com">
+            <span className="flex gap-2">
+              <Mail size="20" /> gauravpandey2310@gmail.com
+            </span>
+          </a>
+          <a href="tel:8448076770">
+            <span className="flex gap-2">
+              <Phone size="20" /> (+91) 8448076770
+            </span>
+          </a>
+        </div>
 
         <form
           ref={formRef}
@@ -106,7 +118,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-2">Your Message</span>
             <textarea
-              rows={6}
+              rows={5}
               name="message"
               value={form.message}
               onChange={handleChange}
@@ -126,7 +138,7 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] xl:w-1/2"
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] xl:w-1/2 "
       >
         <EarthCanvas />
       </motion.div>
