@@ -18,7 +18,7 @@ const Hero = () => {
       transition={{ duration: 1, ease: "easeOut" }}
     >
       <div
-        className={`${styles.paddingX} absolute inset-0 z-10 top-16 xs:top-24 md:top-[130px] lg:top-[120px] max-w-7xl mx-auto flex flow-row items-start gap-5`}
+        className={`${styles.paddingX} absolute z-10 md:z-0 inset-0 top-16 xs:top-24 md:top-[130px] lg:top-[120px] max-w-7xl mx-auto flex flow-row items-start gap-5 `}
       >
         <div className="flex flex-col justify-center items-center mt-12">
           <div className="w-5 h-5 rounded-full bg-[#915eff]"></div>
@@ -68,7 +68,7 @@ const Hero = () => {
               <FaGithub className="hover:text-cyan-400" />
             </a>
             <a
-              href="https://drive.google.com/file/d/1wOFPYHY5lH7Jkew-ImnN9rkdnLan2HUW/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1VvMX8O7WOPdaMf7A7HWA3djogK7-PqPM/view?usp=sharing"
               target="_blank "
             >
               <button className="border border-white py-2 cursor-pointer rounded-xl flex gap-1 items-center px-4 hover:bg-cyan-950 transition-all duration-300 text-xs  md:text-lg">
