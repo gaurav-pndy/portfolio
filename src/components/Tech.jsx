@@ -16,9 +16,15 @@ const Tech = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.25, delay: index * 0.1 }}
-          className="h-14 w-14 md:w-24 md:h-24 text-center "
+          className="h-12 w-12 md:w-24 md:h-24 text-center "
           key={technology.name}
         >
+          <img
+            src={technology.icon}
+            alt={technology.name}
+            className="p-2 rounded-full bg-gradient-to-b from-purple-800 to-purple-950 shadow-lg shadow-purple-500/50 mb-2 md:hidden"
+          />
+
           <BallCanvas icon={technology.icon} />
           <span className="text-[10px] md:text-sm">{technology.name}</span>
         </motion.div>

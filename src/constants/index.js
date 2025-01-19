@@ -57,7 +57,7 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     icon: tailwind,
   },
   {

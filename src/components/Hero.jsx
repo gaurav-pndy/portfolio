@@ -18,7 +18,7 @@ const Hero = () => {
       transition={{ duration: 1, ease: "easeOut" }}
     >
       <div
-        className={`${styles.paddingX} absolute z-10 md:z-0 inset-0 top-16 xs:top-24 md:top-[130px] lg:top-[120px] max-w-7xl mx-auto flex flow-row items-start gap-5 `}
+        className={`${styles.paddingX} absolute z-10  inset-0 top-16 xs:top-24 md:top-[130px] lg:top-[120px]  mx-auto flex flow-row items-start gap-5 max-w-7xl`}
       >
         <div className="flex flex-col justify-center items-center mt-12">
           <div className="w-5 h-5 rounded-full bg-[#915eff]"></div>
@@ -32,7 +32,7 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.5 }}
         >
           <h1 className={`${styles.heroHeadText} text-white `}>
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2 z-10">
               Hi{" "}
               <img
                 src={isHovered ? wave : staticWave}
@@ -79,7 +79,7 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      <div className="absolute  bottom-0 xs:bottom-10 md:bottom-0 md:-right-20  lg:top-10 lg:right-10 md:h-[70%]  lg:h-full flex p-10">
+      <div className="absolute  bottom-0 xs:bottom-10 md:bottom-0 md:-right-20  lg:top-10 xxl:top-80  xxl:right-[35%] lg:right-0 md:h-[70%]  lg:h-full flex p-10 xxl:max-h-[60%]">
         <motion.img
           src={manWithLaptop}
           alt=""

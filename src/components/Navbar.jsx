@@ -3,6 +3,8 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 import { Link } from "react-router-dom";
+import { TiMessages } from "react-icons/ti";
+import { TbMessageCircleShare, TbMessageShare } from "react-icons/tb";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -26,19 +28,27 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
-          {navLinks.map((link) => (
-            <li
-              key={link.id}
-              className={`${
-                active === link.title ? "text-white" : "text-secondary"
-              } font-medium hover:text-white text-[18px] cursor-pointer`}
-              onClick={() => setActive(link.title)}
-            >
-              <a href={`#${link.id}`}>{link.title}</a>
-            </li>
-          ))}
-        </ul>
+        <div className="flex items-center gap-10">
+          <ul className="list-none hidden sm:flex flex-row gap-10">
+            {navLinks.map((link) => (
+              <li
+                key={link.id}
+                className={`${
+                  active === link.title ? "text-white" : "text-secondary"
+                } font-medium hover:text-white text-[18px] cursor-pointer`}
+                onClick={() => setActive(link.title)}
+              >
+                <a href={`#${link.id}`}>{link.title}</a>
+              </li>
+            ))}
+          </ul>
+
+          <a href="mailto:gauravpandey2310@gmail.com">
+            <button className="bg-[#071b79] border-2 border-transparent px-4 py-3 rounded-xl hover:bg-transparent transition-all duration-300 hover:border-[#071b79] text-white font-medium gap-2 items-center hidden sm:flex ">
+              <TbMessageCircleShare size="20" /> Get in Touch
+            </button>
+          </a>
+        </div>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img

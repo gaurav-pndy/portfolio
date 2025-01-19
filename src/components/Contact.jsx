@@ -91,7 +91,7 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="mt-6 flex flex-col gap-6"
+          className="mt-6 flex flex-col text-sm sm:text-base gap-6"
         >
           <label className="flex flex-col">
             <span className="text-white font-medium mb-2">Your Name</span>
@@ -101,7 +101,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-tertiary  py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">

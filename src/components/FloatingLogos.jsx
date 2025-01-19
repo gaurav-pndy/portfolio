@@ -8,11 +8,10 @@ const FloatingLogos = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1, delay: 2 }} // Apply delay to the parent div
+      transition={{ duration: 1, delay: 2 }}
       className="hidden md:block"
     >
-      {/* Floating Logo 1 */}
-      <div className="absolute top-16 left-60 lg:left-[30rem]">
+      <div className="absolute top-16 left-60 lg:left-[30rem] z-20">
         <motion.div
           drag
           dragConstraints={{
@@ -41,8 +40,7 @@ const FloatingLogos = () => {
         </motion.div>
       </div>
 
-      {/* Floating Logo 2 */}
-      <div className="absolute top-40 right-10">
+      <div className="absolute top-40 right-10 z-20">
         <motion.div
           drag
           dragConstraints={{
@@ -71,8 +69,7 @@ const FloatingLogos = () => {
         </motion.div>
       </div>
 
-      {/* Floating Logo 3 */}
-      <div className="absolute bottom-60 lg:top-80 left-5">
+      <div className="absolute bottom-60 lg:top-80 left-5 z-20">
         <motion.div
           drag
           dragConstraints={{
@@ -101,8 +98,7 @@ const FloatingLogos = () => {
         </motion.div>
       </div>
 
-      {/* Floating Logo 4 */}
-      <div className="absolute bottom-20 lg:top-[35rem] left-[40rem] lg:left-[50rem]">
+      <div className="absolute bottom-20 lg:top-[35rem] left-[40rem] lg:left-[50rem] z-20">
         <motion.div
           drag
           dragConstraints={{
