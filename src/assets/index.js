@@ -8,6 +8,7 @@ import close from "./close.svg";
 import workly from "./workly.webp";
 import pathfinder from "./pathfinder.webp";
 import ems from "./ems.webp";
+import memoir from "./memoir.webp";
 import sql from "./tech/sql.webp";
 import firebase from "./tech/firebase.png";
 import supabase from "./tech/supabase.webp";
@@ -46,6 +47,7 @@ export {
   workly,
   pathfinder,
   ems,
+  memoir,
   supabase,
   firebase,
   shadcn,

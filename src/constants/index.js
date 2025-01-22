@@ -11,6 +11,7 @@ import {
   pathfinder,
   workly,
   ems,
+  memoir,
   bootstrap,
   shadcn,
   supabase,
@@ -173,6 +174,37 @@ const projects = [
     image: ems,
     source_code_link: "https://github.com/gaurav-pndy/emp-manage-system",
     live_link: "https://emp-manage-system-nu.vercel.app/",
+  },
+  {
+    name: "Memoir - Social App",
+    description:
+      "A mini social media app where users can create posts and view posts by users they follow.",
+    tags: [
+      {
+        name: "react",
+        image: reactjs,
+      },
+      {
+        name: "typescript",
+        image: typescript,
+      },
+
+      {
+        name: "tailwind",
+        image: tailwind,
+      },
+      {
+        name: "graphQL",
+        image: graphql,
+      },
+      {
+        name: "supabase",
+        image: supabase,
+      },
+    ],
+    image: memoir,
+    source_code_link: "https://github.com/gaurav-pndy/social-media-app",
+    live_link: "https://social-media-app-flax-chi.vercel.app/",
   },
 ];
 
