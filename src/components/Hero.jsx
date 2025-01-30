@@ -68,7 +68,7 @@ const Hero = () => {
               <FaGithub className="hover:text-cyan-400" />
             </a>
             <a
-              href="https://drive.google.com/file/d/1j4HfJKYug3-JYmyuBLM_gIOX4jAosYCL/view?usp=sharing"
+              href="https://drive.google.com/file/d/1hAplftQNTO7ARcgb2W6oxY6ZWlQ-e9q5/view?usp=sharing"
               target="_blank "
             >
               <button className="border border-white py-2 cursor-pointer rounded-xl flex gap-1 items-center px-4 hover:bg-cyan-950 transition-all duration-300 text-xs  md:text-lg">
