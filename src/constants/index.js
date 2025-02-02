@@ -19,6 +19,7 @@ import {
   sql,
   clerk,
   gsap,
+  zentry,
 } from "../assets";
 
 export const navLinks = [
@@ -174,6 +175,32 @@ const projects = [
     image: ems,
     source_code_link: "https://github.com/gaurav-pndy/emp-manage-system",
     live_link: "https://emp-manage-system-nu.vercel.app/",
+  },
+  {
+    name: "Zentry Clone",
+    description: "A clone of the awarded animated website Zentry.",
+    tags: [
+      {
+        name: "react",
+        image: reactjs,
+      },
+      {
+        name: "javascript",
+        image: javascript,
+      },
+
+      {
+        name: "tailwind",
+        image: tailwind,
+      },
+      {
+        name: "GSAP",
+        image: gsap,
+      },
+    ],
+    image: zentry,
+    source_code_link: "https://github.com/gaurav-pndy/zentry-clone",
+    live_link: "https://zentry-clone-navy.vercel.app/",
   },
   {
     name: "Memoir - Social App",
