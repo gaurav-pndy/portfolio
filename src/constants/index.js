@@ -159,24 +159,6 @@ const projects = [
     live_link: "https://pathfinder-eight.vercel.app/",
   },
   {
-    name: "Employee Management System",
-    description:
-      "A system for managing employees, assigning tasks, and handling role-based access.",
-    tags: [
-      {
-        name: "react",
-        image: reactjs,
-      },
-      {
-        name: "tailwind",
-        image: tailwind,
-      },
-    ],
-    image: ems,
-    source_code_link: "https://github.com/gaurav-pndy/emp-manage-system",
-    live_link: "https://emp-manage-system-nu.vercel.app/",
-  },
-  {
     name: "Zentry Clone",
     description: "A clone of the awarded animated website Zentry.",
     tags: [
@@ -202,6 +184,25 @@ const projects = [
     source_code_link: "https://github.com/gaurav-pndy/zentry-clone",
     live_link: "https://zentry-clone-navy.vercel.app/",
   },
+  {
+    name: "Employee Management System",
+    description:
+      "A system for managing employees, assigning tasks, and handling role-based access.",
+    tags: [
+      {
+        name: "react",
+        image: reactjs,
+      },
+      {
+        name: "tailwind",
+        image: tailwind,
+      },
+    ],
+    image: ems,
+    source_code_link: "https://github.com/gaurav-pndy/emp-manage-system",
+    live_link: "https://emp-manage-system-nu.vercel.app/",
+  },
+
   {
     name: "Memoir - Social App",
     description:
