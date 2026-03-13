@@ -8,7 +8,7 @@ import { styles } from "../styles";
 const Tech = () => {
   return (
     <div
-      className={`${styles.paddingX} max-w-7xl mx-auto mb-7 flex flex-row flex-wrap justify-center gap-x-5 gap-y-12 md:gap-10`}
+      className={`${styles.paddingX} max-w-7xl mx-auto mb-7 flex flex-row flex-wrap justify-center gap-x-6 gap-y-16 md:gap-x-10`}
     >
       {technologies.map((technology, index) => (
         <motion.div
@@ -26,7 +26,7 @@ const Tech = () => {
           />
 
           <BallCanvas icon={technology.icon} />
-          <span className="text-[10px] md:text-sm">{technology.name}</span>
+          <span className="text-[10px] md:text-sm ">{technology.name}</span>
         </motion.div>
       ))}
     </div>

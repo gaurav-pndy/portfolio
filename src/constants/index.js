@@ -20,6 +20,13 @@ import {
   clerk,
   gsap,
   zentry,
+  starbucks,
+  tesla,
+  nextjs,
+  framer,
+  nodejs,
+  express,
+  mongodb,
 } from "../assets";
 
 export const navLinks = [
@@ -43,24 +50,17 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Next JS",
+    icon: nextjs,
   },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+
   {
     name: "Tailwind",
     icon: tailwind,
+  },
+  {
+    name: "Framer Motion",
+    icon: framer,
   },
   {
     name: "Redux",
@@ -68,16 +68,24 @@ const technologies = [
   },
 
   {
-    name: "Bootstrap",
-    icon: bootstrap,
-  },
-  {
     name: "ShadCN",
     icon: shadcn,
   },
   {
     name: "SQL",
     icon: sql,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "Express JS",
+    icon: express,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
   },
   {
     name: "GraphQL",
@@ -236,4 +244,33 @@ const projects = [
   },
 ];
 
-export { technologies, projects };
+const experiences = [
+  {
+    title: "Frontend Developer",
+    company_name: "Pasovit",
+    icon: starbucks,
+    iconBg: "#383E56",
+    date: "March 2025 - Present",
+    points: [
+      "Developed and maintained production-ready frontend features using React.js / Next.js, Tailwind CSS and other modern frontend tools.",
+      "Converted complex Figma designs into pixel-perfect, responsive UI components, ensuring consistency across devices and browsers.",
+      "Worked on and developed modern, client-facing websites including Pasovit’s own website.",
+      "Collaborated closely on backend features using Node.js, Express, and MongoDB for selected modules to deliver high-quality releases.",
+      "Worked on API design, data handling, and frontend–backend integration in a MERN stack environment.",
+    ],
+  },
+  {
+    title: "Frontend Developer (Internship)",
+    company_name: "Jobbie",
+    icon: tesla,
+    iconBg: "#E6DEDD",
+    date: "Feb 2025 - Apr 2025",
+    points: [
+      "Contributed to the frontend development of Jobbie’s public-facing website, implementing responsive and user-friendly UI components using React and Tailwind CSS.",
+      "Integrated REST APIs to fetch and render dynamic content on the frontend, handling loading and data states effectively.",
+      "Improved layout structure, visual hierarchy, and mobile responsiveness to deliver a cleaner and more modern user experience.",
+      "Collaborated closely with a small startup team, taking ownership of assigned UI tasks and delivering production-ready updates within tight timelines.",
+    ],
+  },
+];
+export { technologies, projects, experiences };

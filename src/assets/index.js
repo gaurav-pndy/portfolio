@@ -29,6 +29,13 @@ import typescript from "./tech/typescript.png";
 import react from "./react.webp";
 import vscode from "./vscode.webp";
 import manWithLaptop from "./man-with-laptop2.webp";
+import starbucks from "./starbucks.png";
+import tesla from "./tesla.png";
+import nextjs from "./tech/nextjs.png";
+import nodejs from "./tech/nodejs.png";
+import express from "./tech/express.png";
+import mongodb from "./tech/mongodb.svg";
+import framer from "./tech/framer.png";
 export {
   logo,
   indiaflag,
@@ -61,4 +68,11 @@ export {
   react,
   vscode,
   manWithLaptop,
+  starbucks,
+  tesla,
+  nextjs,
+  nodejs,
+  express,
+  mongodb,
+  framer,
 };
